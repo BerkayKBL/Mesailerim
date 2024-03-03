@@ -1,15 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
 
-    <CalendarView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250sp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp">
 
-        android:selectedWeekBackgroundColor="@color/weekcolor">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="P.tesi"
+            android:theme="@style/WeekStyle"/>
 
-    </CalendarView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/WeekStyle"
+            android:text="Salı" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/WeekStyle"
+            android:text="Çarş." />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/WeekStyle"
+            android:text="Perş." />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/WeekStyle"
+            android:text="Cuma" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/WeekStyle"
+            android:text="C.tesi" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/WeekStyle"
+            android:text="Pazar" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/calendar_grid"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:numColumns="7" />
 
 
 </LinearLayout>
