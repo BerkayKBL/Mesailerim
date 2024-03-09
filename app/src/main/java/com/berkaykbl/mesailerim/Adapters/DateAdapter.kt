@@ -2,13 +2,21 @@ package com.berkaykbl.mesailerim.Adapters
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.GridView
 import android.widget.TextView
-import android.graphics.Color
+import android.widget.LinearLayout
+import android.widget.Toast
+import androidx.compose.ui.graphics.Color
+import androidx.core.content.ContextCompat
+import com.berkaykbl.mesailerim.Adapters.DateItem
+import com.berkaykbl.mesailerim.MainActivity
 import com.berkaykbl.mesailerim.R
-import org.w3c.dom.Text
+import com.berkaykbl.mesailerim.Test
+import java.util.Calendar
 
 class DateAdapter(var context: Context, var arrayList: ArrayList<DateItem>) : BaseAdapter() {
     override fun getCount(): Int {
@@ -27,22 +35,23 @@ class DateAdapter(var context: Context, var arrayList: ArrayList<DateItem>) : Ba
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
         var view: View = View.inflate(context, R.layout.grid_item, null)
 
-        var day: TextView = view.findViewById<TextView>(R.id.day)
+        var day: TextView = view.findViewById(R.id.day)
+        var day_bg: LinearLayout = view.findViewById(R.id.day_bg)
         var shift: TextView = view.findViewById(R.id.shift)
         var dateItem : DateItem = arrayList[p0]
 
         day.text = dateItem.day
 
         if (dateItem.isSunday) {
-            day.setTextColor(R.color.teal_200)
+            day.setTextColor(ContextCompat.getColor(context, R.color.grey2))
         }
 
         if (dateItem.isToday) {
-            day.setTextColor(R.color.weekcolor)
+            day.setTextColor(ContextCompat.getColor(context, R.color.weekcolor))
         }
 
         if (dateItem.isPermit) {
-            day.setTextColor(R.color.red)
+            day.setTextColor(ContextCompat.getColor(context, R.color.red))
             shift.text = "İzinli"
         } else if (dateItem.shift > 0.0) {
             shift.text = "Mesai: "+dateItem.shift.toString()
@@ -50,6 +59,13 @@ class DateAdapter(var context: Context, var arrayList: ArrayList<DateItem>) : Ba
             shift.text = " "
         }
 
+        if (dateItem.isSelected) {
+            day_bg.setBackgroundResource(R.drawable.item_day_selected)
+        }
+
+
+        view.setOnClickListener {
+        }
         return view
     }
 

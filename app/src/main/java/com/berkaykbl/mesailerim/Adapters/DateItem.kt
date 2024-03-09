@@ -1,24 +1,12 @@
 package com.berkaykbl.mesailerim.Adapters
 
-class DateItem {
+class DateItem(
+    var day: String,
+    var isSunday: Boolean,
+    var isToday: Boolean,
+    var isPermit: Boolean,
+    var shift: Double,
+    var isSelected: Boolean = false
+) {
 
-    var day: String = ""
-    var isSunday: Boolean = false
-    var isToday: Boolean = false
-    var isPermit: Boolean = false
-    var shift: Double = 0.0
-
-    constructor(
-        day: String,
-        isSunday: Boolean,
-        isToday: Boolean,
-        isPermit: Boolean,
-        shift: Double
-    ) {
-        this.day = day
-        this.isSunday = isSunday
-        this.isToday = isToday
-        this.isPermit = isPermit
-        this.shift = shift
-    }
 }

@@ -9,6 +9,38 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/previousMonth"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:rotation="90"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:src="@android:drawable/arrow_down_float" />
+
+        <TextView
+            android:id="@+id/monthName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="center"/>
+
+        <ImageButton
+            android:id="@+id/nextMonth"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:rotation="270"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:src="@android:drawable/arrow_down_float" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginBottom="10dp">
 
@@ -67,7 +99,13 @@
         android:id="@+id/calendar_grid"
         android:layout_width="match_parent"
         android:layout_height="240dp"
-        android:numColumns="7" />
+        android:numColumns="7"/>
+
+    <TextView
+        android:id="@+id/daaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="qwe"/>
 
 
 </LinearLayout>

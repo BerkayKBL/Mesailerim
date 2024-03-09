@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="weekcolor">#43A047</color>
     <color name="red">#E53935</color>
-    <color name="grey">#B1B0B0</color>
+    <color name="grey">#F7D8D7D7</color>
+    <color name="grey2">#F79F9F9F</color>
 </resources>
