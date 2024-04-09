@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">Mesailerim</string>
+
+    <string name="default_date">00/00/0000</string>
+
+    <string name="left_title_1">Maaş Bilgisi</string>
+    <string name="left_title_2">Mesai Bilgisi</string>
+    <string name="left_title_3">İzin Bilgisi</string>
+    <string name="left_subtitle_1">Ana Maaş</string>
+    <string name="left_subtitle_2">Son Maaş</string>
+    <string name="left_subtitle_3">Haftaiçi Mesai</string>
+    <string name="left_subtitle_4">Cumartesi Mesai</string>
+    <string name="left_subtitle_5">Pazar Mesai</string>
+    <string name="left_subtitle_6">Toplam Mesai</string>
+    <string name="left_subtitle_7">Ücretsiz İzin</string>
+    <string name="left_subtitle_8">Ücretli İzin</string>
+    <string name="left_subtitle_9">Raporlu İzin</string>
+    <string name="left_subtitle_10">Kesintili Gün</string>
+
+    <string name="left_subtitle_11">Mesai Ücreti</string>
+    <string name="left_subtitle_12">Ekstra Ücret</string>
+    <string name="left_subtitle_13">Ekstra Kesinti</string>
+    <string name="left_subtitle_14">İzin Kesintisi</string>
+
+
+    <string name="right_button_1">Mesai Girişi</string>
+    <string name="right_button_2">İzin Girişi</string>
+    <string name="right_button_3">Ekstra Ekle</string>
+    <string name="right_button_4">Aylık Veriyi Sil</string>
+    <string name="right_button_5">Kesinti Ekle</string>
+    <string name="right_button_6">Maaş Değiştir</string>
+    <string name="test_1">20.000</string>
+    <string name="test_2">0</string>
+    <string name="test_3">1</string>
+
+    <string name="confirm">Onayla</string>
+    <string name="cancel">İptal</string>
+
+
 </resources>

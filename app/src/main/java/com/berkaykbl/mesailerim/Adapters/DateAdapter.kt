@@ -42,15 +42,16 @@ class DateAdapter(var context: Context, var arrayList: ArrayList<DateItem>) : Ba
 
         day.text = dateItem.day
 
+
         if (dateItem.isSunday) {
-            day.setTextColor(ContextCompat.getColor(context, R.color.grey2))
+            day.setTextColor(ContextCompat.getColor(context, R.color.sundayColor))
         }
 
         if (dateItem.isToday) {
-            day.setTextColor(ContextCompat.getColor(context, R.color.weekcolor))
+            view.isHovered = true
         }
 
-        if (dateItem.isPermit) {
+        if (dateItem.isPermit != 0) {
             day.setTextColor(ContextCompat.getColor(context, R.color.red))
             shift.text = "İzinli"
         } else if (dateItem.shift > 0.0) {
@@ -60,12 +61,12 @@ class DateAdapter(var context: Context, var arrayList: ArrayList<DateItem>) : Ba
         }
 
         if (dateItem.isSelected) {
-            day_bg.setBackgroundResource(R.drawable.item_day_selected)
+            view.isSelected = true
         }
 
 
-        view.setOnClickListener {
-        }
+
+
         return view
     }
 

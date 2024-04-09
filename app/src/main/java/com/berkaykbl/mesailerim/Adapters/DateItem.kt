@@ -4,8 +4,8 @@ class DateItem(
     var day: String,
     var isSunday: Boolean,
     var isToday: Boolean,
-    var isPermit: Boolean,
-    var shift: Double,
+    var isPermit: Int,
+    var shift: Int,
     var isSelected: Boolean = false
 ) {
 

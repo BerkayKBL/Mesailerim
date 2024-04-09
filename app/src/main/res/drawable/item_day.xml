@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/grey"/>
-    <corners android:radius="5dp"/>
-    <stroke android:width="0.5dp" android:color="@color/white"/>
-</shape>
+
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_selected="true">
+                <shape>
+                    <corners android:radius="5dp" />
+                    <solid android:color="@color/weekColor" />
+
+                </shape>
+            </item>
+            <item android:state_selected="false">
+
+                <shape>
+                    <corners android:radius="5dp" />
+                    <solid android:color="@color/grey" />
+                </shape>
+            </item>
+        </selector>
+
+    </item>
+
+    <item>
+        <selector>
+            <item android:state_hovered="true">
+                <rotate
+                    android:fromDegrees="45"
+                    android:pivotX="90%"
+                    android:pivotY="-90%"
+                    android:toDegrees="-90">
+                    <shape android:shape="rectangle">
+                        <solid android:color="@color/currentDay" />
+                    </shape>
+
+                </rotate>
+            </item>
+        </selector>
+    </item>
+
+
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/white" />
+        </shape>
+    </item>
+
+</layer-list>
+
+

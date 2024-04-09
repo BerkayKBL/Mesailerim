@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/day_bg"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/item_day"
-    android:id="@+id/day_bg">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textSize="13sp"
-        android:layout_marginVertical="5dp"
         android:layout_gravity="center"
-        android:textStyle="bold"/>
+        android:layout_marginVertical="5dp"
+        android:textSize="13sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/shift"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:textSize="11sp"/>
+        android:textSize="11sp"
+        android:layout_gravity="center" />
 </LinearLayout>
